@@ -1,0 +1,139 @@
+* {
+  box-sizing: border-box;
+  line-height: 25px;
+}
+button {
+  background-color: #4caf50; /* Green */
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+button:hover {
+  transform: scale(1.02, 1.02);
+}
+
+label {
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  margin-bottom: 10px;
+  padding: 5px;
+  text-decoration: none;
+  border-radius: 5px;
+  outline: none;
+}
+/* input:focus {
+  border: none;
+}
+input:active {
+  border: none;
+} */
+h2 {
+  font-weight: bold;
+}
+
+body {
+  font-family: Helvetica, Verdana;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(236, 236, 236);
+}
+
+nav {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: center;
+  background-color: #333;
+  padding: 10px;
+}
+nav a {
+  color: white;
+  padding: 14px 20px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  transform: scale(1.2, 1.2);
+}
+
+.row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  margin: 0 auto;
+  width: 90%;
+  height: 100vh;
+}
+
+aside {
+  flex: 25%;
+  padding: 10px;
+  /* height: 70vh; */
+  order: 2;
+  background-color: white;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 9px 20px -19px rgba(0, 0, 0, 0.75);
+}
+
+section {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex: 70%;
+  /* height: 70vh; */
+  order: 1;
+}
+
+section article {
+  flex: 30%;
+  background-color: white;
+  padding: 10px;
+  margin: 10px;
+  border-radius: 10px;
+  box-shadow: 3px 9px 20px -19px rgba(0, 0, 0, 0.75);
+}
+
+section article:hover,
+aside:hover {
+  transform: scale(1.01, 1.01);
+  box-shadow: 3px 9px 30px -19px rgba(0, 0, 0, 0.75);
+}
+
+footer {
+  flex: 100%;
+  padding: 20px;
+  text-align: center;
+  background-color: #333;
+  color: white;
+  order: 3;
+}
+
+@media (max-width: 600px) {
+  nav a {
+    flex: 100%;
+  }
+  aside {
+    flex: 100%;
+  }
+
+  section {
+    flex: 100%;
+  }
+  section article {
+    flex: 100%;
+  }
+
+  footer {
+    flex: 100%;
+  }
+} ;
